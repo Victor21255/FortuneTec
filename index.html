@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FortuneTec</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FortuneTec</h1>
+  </header>
+
+  <div class="container">
+    <section id="ofertas">
+      <h2 class="section-title"> Melhores Ofertas🔥</h2>
+      <div class="product-list">
+        <div class="product">
+          <h3>I5 9400F</h3>
+          <p>2.90 GHZ 6 nucleos ,6 threads - LGA 1151</p>
+          <p class="price">R$ 700,00</p>
+          <button class="btn">Comprar</button>
+        </div>
+        <div class="product">
+          <h3>Placa Mãe B550</h3>
+          <p>DDR4, socket am4 / chipset AMD B550</p>
+          <p class="price">R$ 999,99</p>
+          <button class="btn">Comprar</button>
+        </div>
+        <div class="product">
+          <h3>Kit 32 GB Memória Ram HIKVISION</h3>
+          <p>Pentes 2x16, DDR4 - 3200mhz</p>
+          <p class="price">R$ 400,00</p>
+          <button class="btn">Comprar</button>
+        </div>
+        <div class="product">
+          <h3>GTX 1080</h3>
+          <p>8gb (founders Edition)</p>
+          <p class="price">R$ 1500,00</p>
+          <button class="btn">Comprar</button>
+        </div>
+        <div class="product">
+          <h3>Gabinete Aquario</h3>
+          <p>vidro lateral e frontal, M-ATX</p>
+          <p class="price">R$ 300,00</p>
+          <button class="btn">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="misteriosas">
+      <h2 class="section-title">🎁 Caixas Misteriosas</h2>
+      <div class="boxes-list">
+        <div class="box">
+          <h3>Caixa de Placas de Vídeo</h3>
+          <button class="btn" onclick="abrirCaixa('Placa de Vídeo', 500)">Investir R$ 500</button><br><br>
+          <button class="btn" onclick="abrirCaixa('Placa de Vídeo', 3000)">Investir R$ 3.000</button><br><br>
+          <button class="btn" onclick="abrirCaixa('Placa de Vídeo', 7000)">Investir R$ 7.000</button><br><br>
+        </div>
+
+        <div class="box">
+          <h3>Caixa de Processadores</h3>
+          <button class="btn" onclick="abrirCaixa('Processador', 500)">Investir R$ 500</button><br><br>
+          <button class="btn" onclick="abrirCaixa('Processador', 2000)">Investir R$ 2000</button><br><br>
+          <button class="btn" onclick="abrirCaixa('Processador', 5000)">Investir R$ 5000</button>
+        </div>
+
+        <div class="box">
+          <h3>Caixa de PC Completo</h3>
+          <button class="btn" onclick="abrirCaixa('PC Completo', 3000)">Investir R$ 3000</button><br><br>
+          <button class="btn" onclick="abrirCaixa('PC Completo', 7000)">Investir R$ 7000</button><br><br>
+          <button class="btn" onclick="abrirCaixa('PC Completo', 15000)">Investir R$ 15000</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2 class="section-title">📞 Contato</h2>
+      <div class="contact-info">
+        <p>Email: FortuneTec@gmail.com</p>
+        <p>Telefone: (17) 99999-9999</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 FortuneTec. Todos os direitos reservados.
+  </footer>
+
+  <div id="resultado" class="result" style="display: none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

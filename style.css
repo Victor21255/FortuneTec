@@ -1,0 +1,126 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #464646;
+  color: #b700ff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav h1 {
+  font-size: 2em;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+}
+
+/* Título da seção */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Ofertas e caixas em grids bonitinhos */
+.product-list,
+.boxes-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cartões de produtos e caixas */
+.product,
+.box {
+  background-color: #464646;
+  border: 1px solid #313131;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover,
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #a500e6;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a500e6;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* Estilo para a seção de Contato */
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Div para o resultado */
+.result {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #00ff88;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .product, .box {
+    width: 90%;
+  }
+}
